@@ -69,9 +69,7 @@ Backpropagation is performed by:
 x = Value(2.0)
 y = Value(-3.0)
 z = x * y + x**2
-
 z.backward()
-
 print(z.data)   # forward pass result
 print(x.grad)   # dz/dx
 print(y.grad)   # dz/dy
