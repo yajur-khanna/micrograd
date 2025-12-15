@@ -98,3 +98,27 @@ Scalar-based autodiff:
 - Maps directly to how tensor frameworks generalize
 
 - Tensor support can be layered on later once the fundamentals are solid.
+
+## Inspiration & References
+
+- Andrej Karpathy — micrograd
+
+- Reverse-mode automatic differentiation
+
+- Computational graph theory
+
+- Backpropagation via chain rule
+
+## Possible Extensions
+
+If you want to push this further:
+
+- Vector / tensor support
+
+- Neural network layers (Linear, MLP)
+
+- Optimizers (SGD, Adam)
+
+- Loss functions
+
+- GPU acceleration (purely educational)
