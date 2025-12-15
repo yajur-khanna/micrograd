@@ -1,6 +1,4 @@
-# microrad
-
-Micrograd — Clean Educational Reimplementation
+# Micrograd — Clean Educational Reimplementation
 
 A minimal, from-scratch automatic differentiation engine inspired by Andrej Karpathy’s micrograd, implemented with clarity and pedagogical intent.
 
