@@ -78,8 +78,8 @@ z.backward()
 
 print(z.data)  # forward pass result
 print(x.grad)  # dz/dx
-print(y.grad)  # dz/dy```
-
+print(y.grad)  # dz/dy
+```
 This example builds a computation graph (given in the figure below) dynamically and computes gradients via reverse-mode autodiff.
 ![Computation Graph](my_graph.png)
 
