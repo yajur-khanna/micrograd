@@ -65,8 +65,6 @@ Backpropagation is performed by:
 
 ## Example Usage
 
-## Example Usage
-
 ```python
 from micrograd import Value
 
@@ -83,3 +81,20 @@ print(y.grad)  # dz/dy
 This example builds a computation graph (given in the figure below) dynamically and computes gradients via reverse-mode autodiff.
 ![Computation Graph](my_graph.png)
 
+## Why Scalar-Based?
+
+A reasonable critique is: Why not tensors?
+
+The answer is clarity.
+
+Scalar-based autodiff:
+
+- Makes the chain rule explicit
+
+- Avoids vectorized abstraction leakage
+
+- Forces understanding of computation graphs
+
+- Maps directly to how tensor frameworks generalize
+
+- Tensor support can be layered on later once the fundamentals are solid.
