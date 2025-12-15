@@ -78,5 +78,5 @@ print(y.grad)   # dz/dy
 <\code>
 
 This example builds a computation graph (given in the figure below) dynamically and computes gradients via reverse-mode autodiff.
-![Computation Graph](computation_graph.png)
+![Computation Graph](/computation_graph.png)
 
