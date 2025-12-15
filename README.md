@@ -16,8 +16,7 @@ This project demonstrates how reverse-mode autodiff (backpropagation) works unde
 
 - Supported operations:
 
--- +, -, *, /, **
-
--- ReLU, Sigmoid
+  - +, -, *, -
+  - ReLU, Sigmoid
 
 - No external ML libraries
