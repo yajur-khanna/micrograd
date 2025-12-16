@@ -4,6 +4,8 @@ A minimal, from-scratch automatic differentiation engine inspired by Andrej Karp
 
 This project demonstrates how reverse-mode autodiff (backpropagation) works under the hood by building a tiny scalar-based computation graph engine without relying on PyTorch, TensorFlow, or JAX.
 
+---
+
 ## Features
 
 - Scalar automatic differentiation
@@ -18,6 +20,8 @@ This project demonstrates how reverse-mode autodiff (backpropagation) works unde
   - ReLU, Sigmoid
 
 - No external ML libraries
+
+---
 
 # Project Goals
 
@@ -38,6 +42,8 @@ It is intended to:
 - Serve as a foundation for extending toward neural networks
 
 - Act as a reference when learning larger frameworks
+
+---
 
 # Core Abstraction
 
@@ -61,6 +67,8 @@ Backpropagation is performed by:
 
 - Applying the chain rule at each node
 
+---
+
 ## Example Usage
 
 ```python
@@ -78,6 +86,8 @@ print(y.grad)  # dz/dy
 ```
 This example builds a computation graph (given in the figure below) dynamically and computes gradients via reverse-mode autodiff.
 ![Computation Graph](my_graph.png)
+
+---
 
 ## Why Scalar-Based?
 
@@ -97,6 +107,8 @@ Scalar-based autodiff:
 
 - Tensor support can be layered on later once the fundamentals are solid.
 
+---
+
 ## Inspiration & References
 
 - Andrej Karpathy — micrograd
@@ -106,6 +118,8 @@ Scalar-based autodiff:
 - Computational graph theory
 
 - Backpropagation via chain rule
+
+---
 
 ## Possible Extensions
 
